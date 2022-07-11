@@ -136,7 +136,6 @@ ul, ol, li {
   background: #ffffff;
 }
 .header .header_wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -207,7 +206,7 @@ ul, ol, li {
     display: none;
   }
 }
-.header-inner {
+.header_inner {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -216,18 +215,18 @@ ul, ol, li {
   align-items: center;
 }
 
-.burger-icon {
+.burger_icon {
   display: none;
 }
 
-.nav-list {
+.nav_list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 25px;
 }
-.nav-list .nav-item-link {
+.nav_list .nav_item_link {
   display: none;
   font-weight: 400;
   font-size: 18px;
@@ -238,7 +237,7 @@ ul, ol, li {
   border-bottom: 2px solid transparent;
   transition: 0.3s ease;
 }
-.nav-list .nav-item-link:hover {
+.nav_list .nav_item_link:hover {
   color: #ffffff;
   border-bottom-color: #ffffff;
 }
@@ -247,15 +246,15 @@ ul, ol, li {
   .nav {
     display: none;
   }
-  .nav .nav-item-link {
+  .nav .nav_item_link {
     display: block;
   }
   /* burger */
-  .burger-icon {
+  .burger_icon {
     display: block;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 25px;
+    right: 25px;
     width: 20px;
     height: 15px;
     border: none;
@@ -265,16 +264,16 @@ ul, ol, li {
     flex-direction: column;
     justify-content: space-between;
   }
-  .burger-icon-inner,
-.burger-icon::before,
-.burger-icon:after {
+  .burger_icon_inner,
+.burger_icon::before,
+.burger_icon:after {
     content: "";
     width: 20px;
     height: 2px;
     background: #3D5675;
   }
   /* menu open */
-  .menu-open .header-inner {
+  .menu_open .header_inner {
     width: 100%;
     margin: 0 auto;
     background-color: #3D5675;
@@ -282,10 +281,10 @@ ul, ol, li {
     padding-bottom: 50px;
     z-index: 2;
   }
-  .menu-open .burger-icon-inner {
+  .menu_open .burger_icon_inner {
     display: none;
   }
-  .menu-open .burger-icon::before {
+  .menu_open .burger_icon::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -293,7 +292,7 @@ ul, ol, li {
     background: #ffffff;
     transform: rotate(45deg);
   }
-  .menu-open .burger-icon:after {
+  .menu_open .burger_icon:after {
     content: "";
     position: absolute;
     top: 5px;
@@ -301,7 +300,7 @@ ul, ol, li {
     background: #ffffff;
     transform: rotate(-45deg);
   }
-  .menu-open .nav {
+  .menu_open .nav {
     display: block;
     margin: 0 auto;
   }
