@@ -1,0 +1,18 @@
+@use "./variables" as *;
+@use "./base";
+
+.section_navs {
+    padding: 20px 0;
+    background: $background-grey;
+
+    .section_navs_block {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.slick-dots li button:before {
+    font-size: 50px;
+    color: $color-main;
+  }

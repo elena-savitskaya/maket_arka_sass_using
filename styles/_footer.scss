@@ -1,0 +1,14 @@
+@use "./variables" as *;
+@use "./base";
+
+
+.footer_link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-main;
+
+    &:hover {
+        color: $color-main-hover;
+    }
+}

@@ -1,0 +1,63 @@
+@use "./variables" as *;
+@use "./base";
+
+.section_start {
+    padding: 90px 0;
+    background-color: $background-orange;
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .start_content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        .main_title {
+            max-width: 480px;
+            margin-bottom: 20px;
+        }
+
+        .paragraph {
+            max-width: 277px;
+        }
+    }
+}
+
+.start_image {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .section_start_wrapper {
+        justify-content: center;
+
+        .start_content {
+            justify-content: center;
+            align-items: center;
+
+            .main_title {
+                max-width: 600px;
+                text-align: center;
+            }
+        
+            .paragraph {
+                max-width: 655px;
+                text-align: center;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 575px){
+    .main_title {
+        font-size: 35px;
+        line-height: 37px;
+        max-width: 100%;
+    }
+}

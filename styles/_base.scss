@@ -1,0 +1,137 @@
+@use "./variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: $font-family;
+}
+
+input, button, textarea {
+    font-family: inherit;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.main_title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    color: $color-main-text;
+}
+
+.title_h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: $color-main-text;
+}
+
+.title_h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: $color-main-text;
+}
+
+.title_h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-main-text;
+}
+
+.title_h5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.36px;
+    color: $color-main-text;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-main-text;
+}
+
+.revievs {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-main-text;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.6px;
+    color: $color-grey;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-main;
+    text-transform: uppercase;
+    letter-spacing: 1.96px;
+
+    &:hover {
+        color: $color-main-hover;
+    }
+}
+
+.button {
+    padding: 13px 25px;
+    background-color: $color-main;
+    border-radius: 44px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 1.96px;
+
+    &:hover {
+        background-color: $color-main-hover;
+    }
+}
+
+.white {
+    background-color: $color-white;
+    color: $color-main;
+}
+
+
+
+
+
