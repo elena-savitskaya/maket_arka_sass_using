@@ -38,7 +38,7 @@ ul, ol, li {
 }
 
 .main_title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 48px;
   line-height: 57px;
   color: #011F3A;
@@ -131,6 +131,17 @@ ul, ol, li {
   background-color: #E5E5E5;
 }
 
+@media screen and (max-width: 575px) {
+  .main_title {
+    font-size: 35px;
+    line-height: 37px;
+    max-width: 100%;
+  }
+  .title_h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 .header {
   padding: 19px 0;
   background: #ffffff;
@@ -320,6 +331,62 @@ ul, ol, li {
   color: #3D5675;
 }
 
+.section_process {
+  padding: 90px 0;
+  background: #72BDA3;
+}
+.section_process .title_h2 {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.section_process_cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section_process_cards_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+.section_process_cards_card .card_content {
+  max-width: 197px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section_process_cards_card .card_content .title_h5 {
+  font-weight: 700;
+}
+.section_process_cards_card .card_content .paragraph {
+  color: #3D5675;
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (max-width: 950px) {
+  .section_process_cards {
+    justify-content: center;
+  }
+  .section_process_cards .card_content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 757px) {
+  .section_process_cards {
+    gap: 5px;
+  }
+}
 .section_products {
   padding: 57px 0;
   background: #EEEEEE;
@@ -442,13 +509,6 @@ ul, ol, li {
   .section_start_wrapper .start_content .paragraph {
     max-width: 655px;
     text-align: center;
-  }
-}
-@media screen and (max-width: 575px) {
-  .main_title {
-    font-size: 35px;
-    line-height: 37px;
-    max-width: 100%;
   }
 }
 .footer_link {
