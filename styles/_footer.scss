@@ -2,13 +2,63 @@
 @use "./base";
 
 
+.footer {
+    padding: 60px 0;
+    background: $background-footer;
+
+    &_wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 90px;
+    }
+}
+
+.logo_img img:hover {
+    opacity: 50%;
+}
+
+.footer_navs_lists {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    .paragraph {
+        text-align: center;
+    }
+}
+
 .footer_link {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     color: $color-main;
 
-    &:hover {
+    & a:hover {
         color: $color-main-hover;
     }
 }
+
+.link_svg {
+    display: flex;
+    gap: 11px;
+
+    & img:hover {
+        opacity: 50%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo_img {
+        display: none;
+    }
+
+    .footer_wrapper {
+        justify-content: center;
+    }
+
+    .footer_navs_lists {
+        align-items: center;
+    }
+}
+
