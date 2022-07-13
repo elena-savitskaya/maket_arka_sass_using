@@ -554,7 +554,7 @@ ul, ol, li {
 }
 
 @media screen and (max-width: 850px) {
-  .logo_img {
+  .footer_wrapper .logo_img {
     display: none;
   }
   .footer_wrapper {
