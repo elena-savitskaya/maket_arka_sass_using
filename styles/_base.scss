@@ -74,6 +74,10 @@ ul, ol, li {
     color: $color-main-text;
 }
 
+a .title_h5:hover {
+    color: $color-main-hover;
+}
+
 .paragraph {
     font-weight: 400;
     font-size: 15px;

@@ -1,2 +1,45 @@
 @use "./variables" as *;
 @use "./base";
+
+
+.section_advantage {
+    padding: 90px 0;
+    background: $background-light;
+
+    .title_h2 {
+        margin-bottom: 80px;
+    }
+}
+
+.section_advantage_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &_card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 254px;
+
+        .title_h5 {
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .paragraph {
+            color: $color-grey;
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .section_advantage_cards {
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}

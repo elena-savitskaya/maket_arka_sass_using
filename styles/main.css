@@ -73,6 +73,10 @@ ul, ol, li {
   color: #011F3A;
 }
 
+a .title_h5:hover {
+  color: #6cabf8;
+}
+
 .paragraph {
   font-weight: 400;
   font-size: 15px;
@@ -315,6 +319,42 @@ ul, ol, li {
   .menu_open .nav {
     display: block;
     margin: 0 auto;
+  }
+}
+.section_advantage {
+  padding: 90px 0;
+  background: #EEEEEE;
+}
+.section_advantage .title_h2 {
+  margin-bottom: 80px;
+}
+
+.section_advantage_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.section_advantage_cards_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 254px;
+}
+.section_advantage_cards_card .title_h5 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.section_advantage_cards_card .paragraph {
+  color: #A1A1A1;
+}
+
+@media screen and (max-width: 950px) {
+  .section_advantage_cards {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 }
 .section_navs {
