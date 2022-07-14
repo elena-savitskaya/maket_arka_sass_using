@@ -65,6 +65,10 @@ ul, ol, li {
   color: #011F3A;
 }
 
+a .title_h4:hover {
+  color: #6cabf8;
+}
+
 .title_h5 {
   font-weight: 400;
   font-size: 18px;
@@ -504,6 +508,46 @@ a .title_h5:hover {
   }
   .section_products_links {
     flex-direction: column;
+  }
+}
+.section_request {
+  padding: 110px 0;
+  background: #FFCA3A;
+}
+.section_request_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 194px;
+}
+
+.section_request_content {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.section_request_content .content_image {
+  max-width: 100%;
+}
+.section_request_content .content_info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.section_request_content .content_info .title_h4 {
+  text-align: center;
+}
+.section_request_content .content_info .paragraph {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .section_request_wrapper {
+    flex-wrap: wrap;
+    gap: 100px;
   }
 }
 .section_start {

@@ -66,6 +66,10 @@ ul, ol, li {
     color: $color-main-text;
 }
 
+a .title_h4:hover {
+    color: $color-main-hover;
+}
+
 .title_h5 {
     font-weight: 400;
     font-size: 18px;

@@ -1,2 +1,49 @@
 @use "./variables" as *;
 @use "./base";
+
+
+.section_request {
+    padding: 110px 0;
+    background: $background-yellow;
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 194px;
+    }
+}
+
+.section_request_content {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    .content_image {
+        max-width: 100%;
+    }
+
+    .content_info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .title_h4 {
+            text-align: center;
+        }
+
+        .paragraph {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section_request_wrapper {
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+}
