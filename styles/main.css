@@ -550,6 +550,90 @@ a .title_h5:hover {
     gap: 100px;
   }
 }
+.section_revivs {
+  padding: 100px 0;
+  background: #ffffff;
+}
+.section_revivs .section_revivs_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 350px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+.section_revivs .section_revivs_logo_service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.section_revivs .section_revivs_logo_service img:hover {
+  opacity: 50%;
+}
+.section_revivs .section_revivs_logo_service .lolo_stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.section_revivs_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 55px;
+  justify-content: space-between;
+}
+.section_revivs_content img:hover {
+  opacity: 50%;
+}
+.section_revivs_content .content_photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.revievs {
+  max-width: 381px;
+}
+
+.revievs_person {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.revievs_person img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .section_revivs_content {
+    gap: 30px;
+    justify-content: center;
+  }
+  .section_revivs .section_revivs_logo {
+    gap: 150px;
+  }
+}
+@media screen and (max-width: 757px) {
+  .section_revivs {
+    padding: 60px 0;
+  }
+  .section_revivs .content_reviev {
+    order: 1;
+  }
+  .section_revivs .content_photo {
+    gap: 50px;
+    order: 2;
+  }
+  .section_revivs .section_revivs .section_revivs_logo {
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+}
 .section_start {
   padding: 90px 0;
   background-color: #F2AE4D;
